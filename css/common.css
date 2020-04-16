@@ -183,7 +183,7 @@
     background-color: #b1191a;
 }
 
-.dropdown .dt{
+.dropdown .dt {
     width: 100%;
     height: 100%;
     line-height: 45px;
@@ -192,15 +192,14 @@
     font-size: 16px;
 }
 
-.dropdown .dd{
+.dropdown .dd {
     width: 210px;
     height: 465px;
     background-color: #c81623;
 }
 
-.dd ul li a{
+.dd ul li {
     /* width: 210px; */
-    float: left;
     height: 31px;
     line-height: 31px;
     margin-left: 1px;
@@ -209,19 +208,24 @@
     color: #fff;
 }
 
-/* .dd ul li a::after{
+.dd ul li a {
+    color: #fff;
+}
+
+.dd ul li a:last-child::after {
     content: '\e920';
     font-family: 'icomoon';
     float: right;
     margin-right: 10px;
-} */
-
-.dd ul li:hover{
-    cursor: pointer;
-    background-color: #fff;
-
 }
-.dd ul li:hover a{
+
+.dd ul li:hover {
+    cursor: pointer;
+    color: #c81623;
+    background-color: #fff;
+}
+
+.dd ul li:hover a {
     color: #c81623;
 }
 
@@ -231,8 +235,10 @@
     height: 45px;
     line-height: 45px;
 }
-.navitems ul li{
+
+.navitems ul li {
     float: left;
     padding: 0px 40px;
 }
+
 /* End 导航选项卡 */

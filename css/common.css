@@ -275,14 +275,14 @@
 /* End 导航选项卡 */
 /* 底部模块 */
 .footer {
-    height: 418px;
+    /* height: 418px; */
     background-color: #f5f5f5;
 }
 
 .footer .mod_service {
     height: 110px;
     padding: 30px 0px;
-    border-bottom: 1px solid #ededed;
+    border-bottom: 1px solid #d5d0d0;
 }
 
 .mod_service ul li {
@@ -292,9 +292,44 @@
     padding-left: 37px;
 }
 
-.mod_service ul li img {
+.mod_service ul li:nth-child(1) h3 {
     float: left;
+    width: 50px;
+    height: 50px;
     margin-right: 8px;
+    background: url(../images/icons.png) no-repeat -252px -3px;
+}
+
+.mod_service ul li:nth-child(2) h3 {
+    float: left;
+    width: 50px;
+    height: 50px;
+    margin-right: 8px;
+    background: url(../images/icons.png) no-repeat -254px -53px;
+}
+
+.mod_service ul li:nth-child(3) h3 {
+    float: left;
+    width: 50px;
+    height: 50px;
+    margin-right: 8px;
+    background: url(../images/icons.png) no-repeat -256px -106px;
+}
+
+.mod_service ul li:nth-child(4) h3 {
+    float: left;
+    width: 50px;
+    height: 50px;
+    margin-right: 8px;
+    background: url(../images/icons.png) no-repeat -258px -156px;
+}
+
+.mod_service ul li:nth-child(5) h3 {
+    float: left;
+    width: 50px;
+    height: 50px;
+    margin-right: 8px;
+    background: url(../images/icons.png) no-repeat -258px -208px;
 }
 
 .mod_service .service_txt h5 {
@@ -302,14 +337,49 @@
     font-size: 14px;
 }
 
-.footer .center {
+.footer .mod_help {
     height: 188px;
-    border-bottom: 1px solid #ededed;
+    margin-top: 20px;
+    padding-left: 50px;
+    border-bottom: 1px solid #d5d0d0;
 }
 
-.footer .bottom {
+.mod_help dl {
+    float: left;
+    width: 190px;
+}
+
+.mod_help dl:last-child {
+    float: left;
+    width: 110px;
+    text-align: center;
+}
+
+.mod_help dl dt {
+    line-height: 21px;
+    color: #333333;
+    font-size: 16px;
+}
+
+.mod_help dl dd {
+    line-height: 20px;
+    color: #666666;
+}
+
+.footer .mod_copyright {
     height: 120px;
-    border-bottom: 1px solid #ededed;
+    padding-top: 20px;
+    text-align: center;
+    border-bottom: 1px solid #d5d0d0;
+}
+
+.mod_link a {
+    margin: 0px 5px;
+}
+
+.copyright {
+    padding-top: 15px;
+    line-height: 20px;
 }
 
 /* End 底部模块 */

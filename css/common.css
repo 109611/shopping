@@ -104,8 +104,13 @@
     width: 80px;
     height: 32px;
     color: #faf4f4;
-    font-size: 16px;
+    font-size: 14px;
     background-color: #b1191a;
+    transition: all .3s;
+}
+
+.search button:hover {
+    font-size: 16px;
 }
 
 .hotwords {
@@ -139,6 +144,13 @@
     margin-right: 5px;
     line-height: 36px;
     color: #e60012;
+} */
+
+/* .shopcar::before {
+    content: '';
+    width: 40px;
+    background: url(../images/icons.png) no-repeat -317px -11px;
+    margin-right: 5px;
 } */
 
 .shopcar::after {
@@ -181,6 +193,7 @@
     width: 210px;
     height: 45px;
     background-color: #b1191a;
+    cursor: pointer;
 }
 
 .dropdown .dt {
@@ -192,9 +205,15 @@
     font-size: 16px;
 }
 
+.dropdown .dt:hover .dd {
+    display: block;
+}
+
 .dropdown .dd {
+    display: none;
     width: 210px;
     height: 465px;
+    margin-top: 2px;
     background-color: #c81623;
 }
 
@@ -202,7 +221,7 @@
     /* width: 210px; */
     height: 31px;
     line-height: 31px;
-    margin-left: 1px;
+    /* margin-left: 1px; */
     padding-left: 10px;
     font-size: 14px;
     color: #fff;
@@ -220,7 +239,6 @@
 }
 
 .dd ul li:hover {
-    cursor: pointer;
     color: #c81623;
     background-color: #fff;
 }
@@ -238,7 +256,60 @@
 
 .navitems ul li {
     float: left;
+}
+
+.navitems ul li a {
+    display: block;
+    height: 45px;
+    line-height: 45px;
     padding: 0px 40px;
+    transition: all .3s;
+}
+
+.navitems ul li:hover a {
+    color: #fff;
+    background-color: rgba(200, 22, 35, .9);
+    font-size: 18px;
 }
 
 /* End 导航选项卡 */
+/* 底部模块 */
+.footer {
+    height: 418px;
+    background-color: #f5f5f5;
+}
+
+.footer .mod_service {
+    height: 110px;
+    padding: 30px 0px;
+    border-bottom: 1px solid #ededed;
+}
+
+.mod_service ul li {
+    float: left;
+    width: 240px;
+    height: 50px;
+    padding-left: 37px;
+}
+
+.mod_service ul li img {
+    float: left;
+    margin-right: 8px;
+}
+
+.mod_service .service_txt h5 {
+    margin-top: 5px;
+    font-size: 14px;
+}
+
+.footer .center {
+    height: 188px;
+    border-bottom: 1px solid #ededed;
+}
+
+.footer .bottom {
+    height: 120px;
+    border-bottom: 1px solid #ededed;
+}
+
+/* End 底部模块 */

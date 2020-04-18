@@ -1,0 +1,129 @@
+/* 首页样式 */
+/* 焦点图 */
+.main {
+    width: 980px;
+    height: 455px;
+    margin-top: 10px;
+    margin-left: 220px;
+}
+
+.main .focus {
+    float: left;
+    width: 720px;
+    height: 455px;
+}
+
+.main .focus ul>li>li>img {
+    width: 100%;
+    height: 100%;
+}
+
+/* End 焦点图 */
+/* 新闻快报 */
+.newsflash {
+    float: right;
+    width: 252px;
+    height: 455px;
+}
+
+.news {
+    height: 165px;
+    border: 1px solid #e4e4e4;
+
+}
+
+.news-hd {
+    height: 32px;
+    line-height: 32px;
+    padding: 0px 10px;
+    border-bottom: 1px dotted #e4e4e4;
+}
+
+.news-hd h5 {
+    float: left;
+    font-size: 14px;
+}
+
+.news-hd .more {
+    float: right;
+    font-size: 12px;
+}
+
+.news-hd .more::after {
+    content: '\e920';
+    font-family: 'icomoon';
+}
+
+.news-bd{
+    height: 133px;
+}
+
+.news-bd ul li {
+    height: 26.6px;
+    line-height: 26.6px;
+    padding:  0px 10px;
+    font-size: 14px;
+}
+
+.news-bd ul li:hover{
+    background-color: #e4e4e4;
+}
+
+.lifeservice {
+    overflow: hidden;
+    height: 209px;
+    border: 1px solid #e4e4e4;
+    border-top: none;
+}
+
+.lifeservice ul {
+    width: 252px;
+}
+
+.lifeservice ul li {
+    position: relative;
+    float: left;
+    width: 63px;
+    height: 71px;
+    padding-top: 15px;
+    border-right: 1px solid #e4e4e4;
+    border-bottom: 1px solid #e4e4e4;
+    text-align: center;
+}
+
+/* .lifeservice ul li:nth-child(4n) {
+    float: left;
+    width: 61px;
+    height: 71px;
+    border-right: 1px solid #e4e4e4;
+    border-bottom: 1px solid #e4e4e4;
+} */
+
+.lifeservice ul li i{
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background: url("../images/icons.png") no-repeat -16px -15px;
+}
+
+.lifeservice ul li:nth-child(2) span{
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: inline-block;
+    width: 13px;
+    height: 15px;
+    background-image: url(../images/icon_pre.png);
+}
+
+.bargain {
+    height: 80px;
+    padding-top: 5px;
+}
+
+.bargain img {
+    width: 100%;
+    height: 100%;
+}
+
+/* End 新闻快报 */

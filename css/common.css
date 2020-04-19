@@ -1,145 +1,160 @@
 /* 公共样式 */
 /* 声明字体图标 */
 @font-face {
-    font-family: 'icomoon';
-    src: url('../fonts/icomoon.eot?tomleg');
-    src: url('../fonts/icomoon.eot?tomleg#iefix') format('embedded-opentype'),
-        url('../fonts/icomoon.ttf?tomleg') format('truetype'),
-        url('../fonts/icomoon.woff?tomleg') format('woff'),
-        url('../fonts/icomoon.svg?tomleg#icomoon') format('svg');
-    font-weight: normal;
-    font-style: normal;
-    font-display: block;
+  font-family: "icomoon";
+  src: url("../fonts/icomoon.eot?tomleg");
+  src: url("../fonts/icomoon.eot?tomleg#iefix") format("embedded-opentype"),
+    url("../fonts/icomoon.ttf?tomleg") format("truetype"),
+    url("../fonts/icomoon.woff?tomleg") format("woff"),
+    url("../fonts/icomoon.svg?tomleg#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
 }
 
 /* 版心 */
 .w {
-    width: 1200px;
-    margin: 0 auto;
+  width: 1200px;
+  margin: 0 auto;
 }
 
+/* 左浮动 */
 .fl {
-    float: left;
+  float: left;
 }
 
+/* 右浮动 */
 .fr {
-    float: right;
+  float: right;
 }
 
+/* 字体颜色 */
 .style_red {
-    color: #c81623;
+  color: #c81623;
 }
 
+/* 超出隐藏并用省略号显示 */
+.txt_ellipsis {
+  /*内容超宽后禁止换行显示*/
+  white-space: nowrap;
+  /*超出部分隐藏*/
+  overflow: hidden;
+  /*文字超出部分以省略号显示*/
+  text-overflow: ellipsis;
+}
 
+/* 水平居中 */
+.box_center {
+  text-align: center;
+}
 
 /* 快速导航模块 */
 .shortcut {
-    height: 31px;
-    line-height: 31px;
-    background-color: #f1f1f1;
+  height: 31px;
+  line-height: 31px;
+  background-color: #f1f1f1;
 }
 
 .shortcut ul li {
-    float: left;
+  float: left;
 }
 
 /* 选择所有偶数的li */
 .shortcut .fr ul li:nth-child(even) {
-    width: 1px;
-    height: 12px;
-    margin: 9px 15px;
-    border: 1px solid #666666;
+  width: 1px;
+  height: 12px;
+  margin: 9px 15px;
+  border: 1px solid #666666;
 }
 
 .arrow-icon::after {
-    content: '\e91e';
-    font-family: 'icomoon';
-    margin-left: 3px;
+  content: "\e91e";
+  font-family: "icomoon";
+  margin-left: 3px;
 }
 
 .arrow_icon {
-    font-family: 'icomoon';
-    margin-left: 3px;
+  font-family: "icomoon";
+  margin-left: 3px;
 }
 
 /* End 快速导航模块 */
 
-
 /* 头部 */
 .header {
-    position: relative;
-    height: 105px;
+  position: relative;
+  height: 105px;
 }
 
 .logo {
-    position: absolute;
-    top: 23px;
-    left: 0;
-    width: 180px;
-    height: 60px;
+  position: absolute;
+  top: 23px;
+  left: 0;
+  width: 180px;
+  height: 60px;
 }
 
 .logo a {
-    display: block;
-    width: 180px;
-    height: 60px;
-    background: url(../images/logo.png) no-repeat;
-    font-size: 0;
+  display: block;
+  width: 180px;
+  height: 60px;
+  background: url(../images/logo.png) no-repeat;
+  font-size: 0;
 }
 
 .search {
-    position: absolute;
-    top: 25px;
-    left: 346px;
-    width: 538px;
-    height: 36px;
-    border: 2px solid #b1191a;
+  position: absolute;
+  top: 25px;
+  left: 346px;
+  width: 538px;
+  height: 36px;
+  border: 2px solid #b1191a;
 }
 
 .search input {
-    float: left;
-    width: 454px;
-    height: 32px;
-    padding: 10px;
+  float: left;
+  width: 454px;
+  height: 32px;
+  padding: 10px;
 }
 
 .search button {
-    float: left;
-    width: 80px;
-    height: 32px;
-    color: #faf4f4;
-    font-size: 14px;
-    background-color: #b1191a;
-    transition: all .3s;
+  float: left;
+  width: 80px;
+  height: 32px;
+  color: #faf4f4;
+  font-size: 14px;
+  background-color: #b1191a;
+  transition: all 0.3s;
 }
 
 .search button:hover {
-    font-size: 16px;
+  font-size: 16px;
 }
 
 .hotwords {
-    position: absolute;
-    top: 69px;
-    left: 346px;
-    width: 538px;
-    color: #666666;
-    font-size: 12px;
+  position: absolute;
+  top: 69px;
+  left: 346px;
+  width: 538px;
+  color: #666666;
+  font-size: 12px;
 }
 
 .hotwords a {
-    padding: 0px 10px;
+  padding: 0px 10px;
 }
 
 .shopcar {
-    position: absolute;
-    top: 25px;
-    right: 60px;
-    width: 140px;
-    height: 36px;
-    line-height: 36px;
-    text-align: center;
-    border: 1px solid #dfdfdf;
-    background-color: #f7f7f7;
+  position: absolute;
+  top: 25px;
+  right: 60px;
+  width: 140px;
+  height: 36px;
+  line-height: 36px;
+  text-align: center;
+  border: 1px solid #dfdfdf;
+  background-color: #f7f7f7;
 }
 
 /* .shopcar::before {
@@ -158,231 +173,229 @@
 } */
 
 .shopcar::after {
-    content: '\e920';
-    font-family: 'icomoon';
-    margin-left: 10px;
-    line-height: 36px;
+  content: "\e920";
+  font-family: "icomoon";
+  margin-left: 10px;
+  line-height: 36px;
 }
 
 .shopcar .count {
-    position: absolute;
-    top: -5px;
-    left: 105px;
-    height: 14px;
-    line-height: 14px;
-    padding: 0 5px;
-    background-color: #e60012;
-    border-radius: 7px 7px 7px 0px;
-    color: #fff;
+  position: absolute;
+  top: -5px;
+  left: 105px;
+  height: 14px;
+  line-height: 14px;
+  padding: 0 5px;
+  background-color: #e60012;
+  border-radius: 7px 7px 7px 0px;
+  color: #fff;
 }
 
 .shopcar:hover {
-    cursor: pointer;
-    color: #e60012;
+  cursor: pointer;
+  color: #e60012;
 }
 
 /* End 头部 */
 
-
 /* 导航选项卡 */
 .nav {
-    height: 47px;
-    border-bottom: 2px solid #b1191a;
+  height: 47px;
+  border-bottom: 2px solid #b1191a;
 }
 
 .nav div {
-    height: 45px;
+  height: 45px;
 }
 
 .dropdown {
-    float: left;
-    width: 210px;
-    height: 45px;
-    background-color: #b1191a;
-    cursor: pointer;
+  float: left;
+  width: 210px;
+  height: 45px;
+  background-color: #b1191a;
+  cursor: pointer;
 }
 
 .dropdown .dt {
-    width: 100%;
-    height: 100%;
-    line-height: 45px;
-    color: #fff;
-    text-align: center;
-    font-size: 16px;
+  width: 100%;
+  height: 100%;
+  line-height: 45px;
+  color: #fff;
+  text-align: center;
+  font-size: 16px;
 }
 
 .dropdown .dd {
-    width: 210px;
-    height: 465px;
-    margin-top: 2px;
-    background-color: #c81623;
+  width: 210px;
+  height: 465px;
+  margin-top: 2px;
+  background-color: #c81623;
 }
 
 .dd ul li {
-    /* width: 210px; */
-    height: 31px;
-    line-height: 31px;
-    /* margin-left: 1px; */
-    padding-left: 10px;
-    font-size: 14px;
-    color: #fff;
+  /* width: 210px; */
+  height: 31px;
+  line-height: 31px;
+  /* margin-left: 1px; */
+  padding-left: 10px;
+  font-size: 14px;
+  color: #fff;
 }
 
 .dd ul li a {
-    color: #fff;
+  color: #fff;
 }
 
 .dd ul li a:last-child::after {
-    content: '\e920';
-    font-family: 'icomoon';
-    float: right;
-    margin-right: 10px;
+  content: "\e920";
+  font-family: "icomoon";
+  float: right;
+  margin-right: 10px;
 }
 
 .dd ul li:hover {
-    color: #c81623;
-    background-color: #fff;
+  color: #c81623;
+  background-color: #fff;
 }
 
 .dd ul li:hover a {
-    color: #c81623;
+  color: #c81623;
 }
 
 .navitems {
-    float: right;
-    width: 990px;
-    height: 45px;
-    line-height: 45px;
+  float: right;
+  width: 990px;
+  height: 45px;
+  line-height: 45px;
 }
 
 .navitems ul li {
-    float: left;
+  float: left;
 }
 
 .navitems ul li a {
-    display: block;
-    height: 45px;
-    line-height: 45px;
-    padding: 0px 40px;
-    transition: all .3s;
+  display: block;
+  height: 45px;
+  line-height: 45px;
+  padding: 0px 40px;
+  transition: all 0.3s;
 }
 
 .navitems ul li:hover a {
-    color: #fff;
-    background-color: rgba(200, 22, 35, .9);
-    font-size: 18px;
+  color: #fff;
+  background-color: rgba(200, 22, 35, 0.9);
+  font-size: 18px;
 }
 
 /* End 导航选项卡 */
 
-
 /* 底部模块 */
 .footer {
-    /* height: 418px; */
-    background-color: #f5f5f5;
+  /* height: 418px; */
+  background-color: #f5f5f5;
 }
 
 .footer .mod_service {
-    height: 110px;
-    padding: 30px 0px;
-    border-bottom: 1px solid #d5d0d0;
+  height: 110px;
+  padding: 30px 0px;
+  border-bottom: 1px solid #d5d0d0;
 }
 
 .mod_service ul li {
-    float: left;
-    width: 240px;
-    height: 50px;
-    padding-left: 37px;
+  float: left;
+  width: 240px;
+  height: 50px;
+  padding-left: 37px;
 }
 
 .mod_service ul li:nth-child(1) h3 {
-    float: left;
-    width: 50px;
-    height: 50px;
-    margin-right: 8px;
-    background: url(../images/icons.png) no-repeat -252px -3px;
+  float: left;
+  width: 50px;
+  height: 50px;
+  margin-right: 8px;
+  background: url(../images/icons.png) no-repeat -252px -3px;
 }
 
 .mod_service ul li:nth-child(2) h3 {
-    float: left;
-    width: 50px;
-    height: 50px;
-    margin-right: 8px;
-    background: url(../images/icons.png) no-repeat -254px -53px;
+  float: left;
+  width: 50px;
+  height: 50px;
+  margin-right: 8px;
+  background: url(../images/icons.png) no-repeat -254px -53px;
 }
 
 .mod_service ul li:nth-child(3) h3 {
-    float: left;
-    width: 50px;
-    height: 50px;
-    margin-right: 8px;
-    background: url(../images/icons.png) no-repeat -256px -106px;
+  float: left;
+  width: 50px;
+  height: 50px;
+  margin-right: 8px;
+  background: url(../images/icons.png) no-repeat -256px -106px;
 }
 
 .mod_service ul li:nth-child(4) h3 {
-    float: left;
-    width: 50px;
-    height: 50px;
-    margin-right: 8px;
-    background: url(../images/icons.png) no-repeat -258px -156px;
+  float: left;
+  width: 50px;
+  height: 50px;
+  margin-right: 8px;
+  background: url(../images/icons.png) no-repeat -258px -156px;
 }
 
 .mod_service ul li:nth-child(5) h3 {
-    float: left;
-    width: 50px;
-    height: 50px;
-    margin-right: 8px;
-    background: url(../images/icons.png) no-repeat -258px -208px;
+  float: left;
+  width: 50px;
+  height: 50px;
+  margin-right: 8px;
+  background: url(../images/icons.png) no-repeat -258px -208px;
 }
 
 .mod_service .service_txt h5 {
-    margin-top: 5px;
-    font-size: 14px;
+  margin-top: 5px;
+  font-size: 14px;
 }
 
 .footer .mod_help {
-    height: 188px;
-    margin-top: 20px;
-    padding-left: 50px;
-    border-bottom: 1px solid #d5d0d0;
+  height: 188px;
+  margin-top: 20px;
+  padding-left: 50px;
+  border-bottom: 1px solid #d5d0d0;
 }
 
 .mod_help dl {
-    float: left;
-    width: 190px;
+  float: left;
+  width: 190px;
 }
 
 .mod_help dl:last-child {
-    float: left;
-    width: 110px;
-    text-align: center;
+  float: left;
+  width: 110px;
+  text-align: center;
 }
 
 .mod_help dl dt {
-    line-height: 21px;
-    color: #333333;
-    font-size: 16px;
+  line-height: 21px;
+  color: #333333;
+  font-size: 16px;
 }
 
 .mod_help dl dd {
-    line-height: 20px;
-    color: #666666;
+  line-height: 20px;
+  color: #666666;
 }
 
 .footer .mod_copyright {
-    height: 120px;
-    padding-top: 20px;
-    text-align: center;
-    border-bottom: 1px solid #d5d0d0;
+  height: 120px;
+  padding-top: 20px;
+  text-align: center;
+  border-bottom: 1px solid #d5d0d0;
 }
 
 .mod_link a {
-    margin: 0px 5px;
+  margin: 0px 5px;
 }
 
 .copyright {
-    padding-top: 15px;
-    line-height: 20px;
+  padding-top: 15px;
+  line-height: 20px;
 }
 
 /* End 底部模块 */

@@ -72,7 +72,7 @@ body {
 }
 
 /* 清除浮动 */
-.clearfin:before .clearfix:after {
+.clearfix:before .clearfix:after {
   content: "";
   display: table;
 }

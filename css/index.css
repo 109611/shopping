@@ -15,9 +15,11 @@
 }
 
 .main .focus {
+  position: relative;
   float: left;
   width: 720px;
   height: 455px;
+  text-align: center;
 }
 
 .main .focus ul > li > li > img {
@@ -25,6 +27,57 @@
   height: 100%;
 }
 
+.focus > .prev,
+.next {
+  position: absolute;
+  top: 0;
+  width: 30px;
+  height: 455px;
+  line-height: 455px;
+  /* margin-top: -25px; */
+  color: #fff;
+  font-size: 18px;
+  font-family: "icomoon";
+  z-index: 3;
+}
+
+.focus > .prev:hover {
+  color: #e2162f;
+}
+
+.focus > .prev {
+  left: 0;
+  background: linear-gradient(to right, rgba(0, 13, 58, 0.5), transparent);
+}
+
+.focus > .next {
+  right: 0;
+  background: linear-gradient(to left, rgba(0, 13, 58, 0.5), transparent);
+}
+
+.focus > .focus_index {
+  position: absolute;
+  left: 43%;
+  bottom: 10px;
+  height: 10px;
+  font-family: "icomoon";
+  z-index: 10;
+}
+
+.focus_index li {
+  float: left;
+  width: 10px;
+  height: 10px;
+  line-height: 10px;
+  margin: 5px;
+  border-radius: 5px;
+}
+.focus_index li:first-child a {
+  color: #c81623;
+}
+.focus_index li a {
+  color: rgba(255, 255, 255, 0.829);
+}
 /* End 焦点图 */
 /* 新闻快报 */
 .newsflash {
@@ -101,16 +154,9 @@
 }
 
 .lifeservice ul li:hover {
+  /* 内阴影面积 */
   box-shadow: 1px 1px inset;
 }
-
-/* .lifeservice ul li:nth-child(4n) {
-    float: left;
-    width: 61px;
-    height: 71px;
-    border-right: 1px solid #e4e4e4;
-    border-bottom: 1px solid #e4e4e4;
-} */
 
 .lifeservice ul li i {
   display: inline-block;
@@ -119,11 +165,12 @@
   background: url("../images/icons.png") no-repeat -16px -15px;
 }
 
-.lifeservice ul li:nth-child(2) span {
+/* "减" 小图标样式 */
+.lifeservice_combo::before {
+  content: "";
   position: absolute;
   top: 0;
   right: 0;
-  display: inline-block;
   width: 13px;
   height: 15px;
   background-image: url(../images/icon_pre.png);
@@ -518,7 +565,7 @@
 /* End 手机通讯选项卡样式 */
 
 /* 电脑办公选项卡样式 */
-.computer {
+.computer_hd {
   border-bottom: 2px solid #c81623;
 }
 .computer_hd h3 {

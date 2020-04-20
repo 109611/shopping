@@ -67,6 +67,15 @@
   border: 1px solid #666666;
 }
 
+/* 旋转样式  正数为顺时针 负数为逆时针*/
+/* .shortcut .fr ul li:hover a i {
+  transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+} */
+
 .arrow-icon::after {
   content: "\e91e";
   font-family: "icomoon";
@@ -75,9 +84,14 @@
 
 .arrow_icon {
   font-family: "icomoon";
-  margin-left: 3px;
+  padding-left: 3px;
+  /* 过渡元素要转成行内块或块级元素 */
+  /* display: inline-block;
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: All 0.3s ease-in-out;
+  -moz-transition: All 0.3s ease-in-out;
+  -o-transition: All 0.3s ease-in-out; */
 }
-
 /* End 快速导航模块 */
 
 /* 头部 */

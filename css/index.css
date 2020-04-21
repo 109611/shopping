@@ -2,7 +2,7 @@
  * @Author: xiaoming 
  * @Date: 2020-04-18 22:24:23 
  * @Last Modified by: mikey.zhaopeng
- * @Last Modified time: 2020-04-18 23:37:22
+ * @Last Modified time: 2020-04-21 16:44:02
  */
 
 /* 首页样式 */
@@ -165,6 +165,9 @@
   background: url("../images/icons.png") no-repeat -16px -15px;
 }
 
+.lifeservice ul li p {
+  cursor: default;
+}
 /* "减" 小图标样式 */
 .lifeservice_combo::before {
   content: "";
@@ -587,7 +590,7 @@
 /* End 楼层区 */
 
 /* 侧边栏导航 */
-.sidebar {
+.sidebar_left {
   width: 66px;
   position: fixed;
   top: 50%;
@@ -596,17 +599,17 @@
   margin-top: -150px;
   text-align: center;
 }
-.sidebar ul li:first-child a {
+.sidebar_left ul li:first-child a {
   color: #fff;
   background-color: #c81623;
 }
-.sidebar ul li a {
+.sidebar_left ul li a {
   display: block;
   height: 32px;
   line-height: 32px;
   padding: 0 5px;
 }
-.sidebar ul li a:hover {
+.sidebar_left ul li a:hover {
   color: #fff;
   background-color: #c81623;
 }

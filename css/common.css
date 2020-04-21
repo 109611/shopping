@@ -139,11 +139,7 @@
   color: #faf4f4;
   font-size: 14px;
   background-color: #b1191a;
-  transition: all 0.3s;
-}
-
-.search button:hover {
-  font-size: 16px;
+  cursor: default;
 }
 
 .hotwords {
@@ -302,6 +298,31 @@
 }
 
 /* End 导航选项卡 */
+
+/* 右侧边栏 */
+.sidebar_right {
+  width: 66px;
+  position: fixed;
+  top: 90%;
+  right: 50%;
+  margin-right: -670px;
+  text-align: center;
+}
+
+.sidebar_right ul li a {
+  display: block;
+  height: 32px;
+  line-height: 32px;
+  padding: 0 5px;
+  font-family: "icomoon";
+  font-size: 18px;
+}
+
+.sidebar_left ul li a:hover {
+  color: #fff;
+  background-color: #c81623;
+}
+/* End 右侧边栏 */
 
 /* 底部模块 */
 .footer {

@@ -1,0 +1,143 @@
+/*
+ * @Author: xiaoming
+ * @Date: 2020-04-21 15:20:01 
+ * @Last Modified by: mikey.zhaopeng
+ * @Last Modified time: 2020-04-21 16:23:59
+ */
+
+/* 注册页样式 */
+.w {
+  width: 1200px;
+  margin: 0 auto;
+}
+.color_red {
+  color: #c61a2a;
+}
+.color_green {
+  color: #40b83f;
+}
+.color_orange {
+  color: #f79100;
+}
+.color_blur {
+  color: #1ba1e6;
+}
+.header {
+  height: 85px;
+  border-bottom: 2px solid #c61a2a;
+}
+.logo {
+  float: left;
+  width: 178px;
+  height: 65px;
+  margin-top: 15px;
+}
+.registered {
+  height: 522px;
+  margin-top: 20px;
+  border: 1px solid #ececec;
+}
+.registered h3 {
+  height: 42px;
+  line-height: 42px;
+  padding: 0 10px;
+  background-color: #ececec;
+  font-size: #333333;
+}
+.login {
+  float: right;
+  font-size: 14px;
+}
+.reg_form {
+  width: 600px;
+  height: 400px;
+  margin: 50px auto 0;
+}
+.reg_form form ul li {
+  font-size: 14px;
+  padding: 10px 0;
+}
+.reg_form form ul li label {
+  display: inline-block;
+  width: 85px;
+  height: 32px;
+  line-height: 32px;
+  text-align: right;
+}
+.reg_form form ul li input {
+  width: 240px;
+  height: 36px;
+  padding: 5px;
+  border: 1px solid #666;
+}
+.error {
+  color: #c61a2a;
+  padding-left: 10px;
+}
+.error i {
+  vertical-align: middle;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-top: -2px;
+  margin-right: 5px;
+  background: url(../images/error.png) no-repeat;
+}
+.pwdprompt {
+  height: 15px;
+  line-height: 15px;
+  margin-top: 5px;
+  margin-left: 152px;
+}
+.pwdlevel span {
+  display: inline-block;
+  width: 35px;
+  height: 15px;
+  text-align: center;
+  color: #fff;
+}
+.lvl_weak {
+  background-color: #c61a2a;
+}
+.lvl_general {
+  background-color: #40b83f;
+}
+.lvl_strong {
+  background-color: #f79100;
+}
+.agreement {
+  height: 20px;
+  line-height: 20px;
+  margin-left: 80px;
+  margin-top: 20px;
+}
+.agreement input {
+  width: 16px;
+  height: 15px;
+  vertical-align: middle;
+}
+.reg_form button {
+  width: 200px;
+  height: 34px;
+  margin-left: 90px;
+  margin-top: 40px;
+  background-color: #c61a2a;
+  color: #fff;
+}
+
+/* 底部模块 */
+.footer .mod_copyright {
+  height: 120px;
+  padding-top: 20px;
+  text-align: center;
+}
+
+.mod_link a {
+  margin: 0px 5px;
+}
+
+.copyright {
+  padding-top: 15px;
+  line-height: 20px;
+}
+/* End 底部模块 */

@@ -24,7 +24,20 @@ img {
   /* 取消图片底侧有空白缝隙的问题 */
   vertical-align: middle;
   /* 当鼠标经过button 按钮的时候，鼠标变成小手 */
-  cursor: pointer;
+  /* cursor: pointer; */
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  cursor: default;
+}
+
+p {
+  cursor: default;
 }
 
 button {
@@ -61,6 +74,7 @@ body {
   /* CSS3 抗锯齿形 让文字显示的更加清晰 */
   -webkit-font-smoothing: antialiased;
   background-color: #fff;
+  /* 设置字体12像素 行高是字体的 1.5倍 */
   font: 12px/1.5 Microsoft YaHei, Heiti SC, tahoma, arial, Hiragino Sans GB,
     "\5B8B\4F53", sans-serif;
   color: #666;
@@ -72,15 +86,13 @@ body {
 }
 
 /* 清除浮动 */
-.clearfix:before .clearfix:after {
-  content: "";
-  display: table;
-}
-
+/*伪元素是行内元素 正常浏览器清除浮动方法*/
 .clearfix:after {
+  content: "";
+  display: block;
   clear: both;
 }
-
 .clearfix {
+  /*ie6清除浮动的方式 *号只有IE6-IE7执行，其他浏览器不执行*/
   *zoom: 1;
 }

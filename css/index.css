@@ -2,7 +2,7 @@
  * @Author: xiaoming 
  * @Date: 2020-04-18 22:24:23 
  * @Last Modified by: mikey.zhaopeng
- * @Last Modified time: 2020-04-21 16:44:02
+ * @Last Modified time: 2020-04-29 23:25:49
  */
 
 /* 首页样式 */
@@ -592,11 +592,11 @@
 /* 侧边栏导航 */
 .sidebar_left {
   width: 66px;
-  position: fixed;
+  position: absolute;
   top: 50%;
   left: 50%;
   margin-left: -670px;
-  margin-top: -150px;
+  /* margin-top: -150px; */
   text-align: center;
 }
 .sidebar_left ul li:first-child a {

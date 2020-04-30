@@ -301,6 +301,7 @@
 
 /* 右侧边栏 */
 .sidebar_right {
+  display: none;
   width: 66px;
   position: fixed;
   top: 90%;

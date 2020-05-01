@@ -22,10 +22,11 @@
     <link rel="stylesheet" href="css/index.css">
     <!-- 引入公共的js文件 -->
     <script src="js/common.js"></script>
+    <!-- 引入动画函数js文件,必须放在index.js前面 -->
+    <script src="js/animation.js"></script>
     <!-- 引入首页的js文件 -->
     <script src="js/index.js"></script>
-    <!-- 引入动画函数js文件 -->
-    <script src="js/animation.js"></script>
+
 </head>
 
 <body>
@@ -151,8 +152,8 @@
         <div class="main">
             <!-- focus焦点图 -->
             <div class="focus">
-                <a href="javasrcipt:;" class="focus_Prev"></a>
-                <a href="javasrcipt:;" class="focus_next"></a>
+                <span class="focus_Prev"></span>
+                <span class="focus_next"></span>
                 <!-- 图片区域 -->
                 <ul class="focusImg">
                     <li>
@@ -659,7 +660,7 @@
     <!-- 右侧边栏 start -->
     <div class="sidebar_right">
         <ul>
-            <li><a title="回到顶部" href="#shortcut"></a></li>
+            <li><a id="goTop" title="回到顶部"></a></li>
             <li><a title="联系客服" href="javasrcipt:;"></a></li>
         </ul>
     </div>

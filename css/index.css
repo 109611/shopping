@@ -2,15 +2,10 @@
  * @Author: xiaoming 
  * @Date: 2020-04-18 22:24:23 
  * @Last Modified by: mikey.zhaopeng
- * @Last Modified time: 2020-04-30 17:34:22
+ * @Last Modified time: 2020-05-01 16:13:42
  */
 
 /* 首页样式 */
-
-.focus .current {
-  background-color: #c81623;
-}
-
 /* 焦点图 */
 .main {
   width: 980px;
@@ -19,7 +14,7 @@
   margin-left: 220px;
 }
 
-.main .focus {
+.focus {
   position: relative;
   float: left;
   width: 720px;
@@ -28,39 +23,43 @@
   text-align: center;
 }
 
-.main .focus .focusImg {
-  width: 500%;
+.focusImg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1500%;
   height: 100%;
 }
 
-.main .focus .focusImg > li {
+.focusImg > li {
   float: left;
   width: 720px;
   height: 455px;
   overflow: hidden;
 }
 
-.main .focus .focusImg > li > img {
+.focusImg > li > img {
   width: 100%;
   height: 100%;
 }
 
-.focus > .focus_Prev,
+.focus_Prev,
 .focus_next {
-  display: none;
   position: absolute;
   top: 0;
   width: 50px;
-  height: 455px;
+  height: 100%;
   line-height: 455px;
   color: #fff;
   font-size: 24px;
   font-family: "icomoon";
   text-align: center;
   z-index: 3;
+  cursor: pointer;
 }
 
-.focus > .focus_Prev:hover {
+.focus_Prev:hover,
+.focus_next:hover {
   color: #e2162f;
 }
 
@@ -74,7 +73,7 @@
   background: linear-gradient(to left, rgba(0, 13, 58, 0.5), transparent);
 }
 
-.focus > .focus_index {
+.focus_index {
   position: absolute;
   left: 10%;
   bottom: 10px;
@@ -82,25 +81,29 @@
   z-index: 10;
 }
 
-.focus_index_item {
+.focus_items {
   float: left;
+  cursor: pointer;
+}
+
+.focus_items span {
+  display: block;
   width: 10px;
   height: 10px;
-  line-height: 10px;
-  padding-left: 5px;
-  border-radius: 5px;
+  margin: 2.5px;
   background-color: white;
+  border: 1px solid #666;
+  border-radius: 50%;
   opacity: 0.9;
   transition: all 0.3s;
 }
-.focus_index li:hover {
+
+.focus_index li:hover span {
+  margin: 0 5px;
   width: 15px;
   height: 15px;
-  margin: 0;
   border-radius: 7.5px;
-  background-color: #c81623;
   opacity: 1;
-  cursor: pointer;
 }
 /* End 焦点图 */
 /* 新闻快报 */

@@ -40,6 +40,7 @@ p {
   cursor: default;
 }
 
+a,
 button {
   /* 当鼠标经过button 按钮的时候，鼠标变成小手 */
   cursor: pointer;
@@ -65,10 +66,10 @@ input {
 }
 
 /* 滚动效果 */
-html {
-  /* 平稳的滚动 默认是auto立即滚动 */
-  scroll-behavior: smooth;
-}
+/* html { */
+/* 平稳的滚动 默认是auto立即滚动 */
+/* scroll-behavior: smooth; */
+/* } */
 
 body {
   /* CSS3 抗锯齿形 让文字显示的更加清晰 */

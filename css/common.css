@@ -32,6 +32,9 @@
 .style_red {
   color: #c81623;
 }
+.style_blue {
+  color: #3b95da;
+}
 
 /* 超出隐藏并用省略号显示 */
 .txt_ellipsis {

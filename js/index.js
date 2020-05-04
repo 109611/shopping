@@ -2,7 +2,7 @@
  * @Author: XiaoMing
  * @Date: 2020-04-29 22:54:02 
  * @Last Modified by: mikey.zhaopeng
- * @Last Modified time: 2020-05-04 23:03:17
+ * @Last Modified time: 2020-05-04 23:31:24
  */
 
 window.addEventListener('load', function () {
@@ -15,6 +15,7 @@ window.addEventListener('load', function () {
     var focusTimer = null;//焦点图轮播定时器
     var imgNum = 0;    //控制焦点图切换
     var IndexNum = 0;    //控制焦点图小圆点切换
+
 
     //显示和隐藏左右切图按钮
     focus.addEventListener('mouseenter', function () {
@@ -129,10 +130,30 @@ window.addEventListener('load', function () {
     var main = document.querySelector('.main');
     var mainTop = main.offsetTop;   //获取main距离浏览器顶部的top值
     var sidebarLeftTop = sidebarLeft.offsetTop - mainTop;//等于sidebarLeft距离main顶部的值
-
-
+    pageScroll()//设置电梯导航的位置
     //页面滚动事件
-    document.addEventListener('scroll', function () {
+    document.addEventListener('scroll', pageScroll);
+
+    //电梯导航
+    $('.sidebar_left li').click(function () {
+        var current = $('.floor .w').eq($(this).index()).offset().top;
+        $('body, html').stop().animate({
+            scrollTop: current
+        });
+        $('.sidebar_left li a').removeClass('current');
+        $('.sidebar_left li').eq($(this).index()).children(0).addClass('current');
+    });
+
+    //小圆点改变调用函数
+    function circleChange() {
+        for (let i = 0; i < focusUl.children.length; i++) {
+            focusUl.children[i].children[0].style.backgroundColor = '#fff';
+        }
+        focusUl.children[IndexNum].children[0].style.backgroundColor = '#c81623'
+    }
+
+    //页面滚动调用函数
+    function pageScroll() {
         //window.pageYOffset:获取页面被卷去的高度
         if (window.pageYOffset >= mainTop) {
             sidebarLeft.style.position = 'fixed'
@@ -141,22 +162,5 @@ window.addEventListener('load', function () {
             sidebarLeft.style.position = 'absolute'
             sidebarLeft.style.top = '50%';
         }
-    });
-
-    //电梯导航
-    $('.sidebar_left li').click(function () {
-        var current = $('.floor .w').eq($(this).index()).offset().top;
-
-        $('body, html').stop().animate({
-            scrollTop: current
-        });
-    });
-
-    //小圆点改变函数
-    function circleChange() {
-        for (let i = 0; i < focusUl.children.length; i++) {
-            focusUl.children[i].children[0].style.backgroundColor = '#fff';
-        }
-        focusUl.children[IndexNum].children[0].style.backgroundColor = '#c81623'
     }
 })

@@ -2,7 +2,7 @@
  * @Author: XiaoMing
  * @Date: 2020-04-29 22:54:02 
  * @Last Modified by: mikey.zhaopeng
- * @Last Modified time: 2020-05-01 16:04:39
+ * @Last Modified time: 2020-05-04 23:03:17
  */
 
 window.addEventListener('load', function () {
@@ -143,7 +143,16 @@ window.addEventListener('load', function () {
         }
     });
 
-    //小圆点改变
+    //电梯导航
+    $('.sidebar_left li').click(function () {
+        var current = $('.floor .w').eq($(this).index()).offset().top;
+
+        $('body, html').stop().animate({
+            scrollTop: current
+        });
+    });
+
+    //小圆点改变函数
     function circleChange() {
         for (let i = 0; i < focusUl.children.length; i++) {
             focusUl.children[i].children[0].style.backgroundColor = '#fff';

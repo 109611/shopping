@@ -20,6 +20,8 @@
     <link rel="stylesheet" href="css/common.css">
     <!-- 引入首页样式问价 -->
     <link rel="stylesheet" href="css/index.css">
+
+    <script src="js/jQuery.js"></script>
     <!-- 引入公共的js文件 -->
     <script src="js/common.js"></script>
     <!-- 引入动画函数js文件,必须放在index.js前面 -->
@@ -314,104 +316,106 @@
     </div>
     <!-- 推荐模块 end -->
 
-    <!-- 猜你喜欢 start -->
-    <div class="like w">
-        <div class="like_hd">
-            <h2 id="like">猜你喜欢</h2>
-            <a href="javasrcipt:;">换一批</a>
-        </div>
-        <div class="like_bd">
-            <ul>
-                <li>
-                    <div class="like_img">
-                        <img src="uploads/like_01.png" title="猜你喜欢">
-                    </div>
-                    <div class="like_item">
-                        <p class="txt_ellipsis">阳光美包新款单肩包女,阳光美包新款单肩包女</p>
-                        <p class="txt_ellipsis">包时尚子母包四件套女</p>
-                        <a href="javascript:;">¥116.00</a>
-                    </div>
-                </li>
-                <li>
-                    <div class="like_img">
-                        <img src="uploads/like_02.png" title="猜你喜欢">
-                    </div>
-                    <div class="like_item">
-                        <p class="txt_ellipsis">三星</p>
-                        <p class="txt_ellipsis">（G5500）移动联</p>
-                        <a href="javascript:;">¥649.00</a>
-                    </div>
-                </li>
-                <li>
-                    <div class="like_img">
-                        <img src="uploads/like_03.png" title="猜你喜欢">
-                    </div>
-                    <div class="like_item">
-                        <p class="txt_ellipsis">欧普</p>
-                        <p class="txt_ellipsis">JYLZ08面板灯平板灯铝</p>
-                        <a href="javascript:;">¥238.00</a>
-                    </div>
-                </li>
-                <li>
-                    <div class="like_img">
-                        <img src="uploads/like_04.png" title="猜你喜欢">
-                    </div>
-                    <div class="like_item">
-                        <p class="txt_ellipsis">爱仕达 30CM炒锅不粘</p>
-                        <p class="txt_ellipsis">锅NWG8330E电磁炉炒</p>
-                        <a href="javascript:;">¥116.00</a>
-                    </div>
-                </li>
-                <li>
-                    <div class="like_img">
-                        <img src="uploads/like_05.png" title="猜你喜欢">
-                    </div>
-                    <div class="like_item">
-                        <p class="txt_ellipsis">捷波朗 </p>
-                        <p class="txt_ellipsis">（jabra）BOOSI劲步</p>
-                        <a href="javascript:;">¥116.00</a>
-                    </div>
-                </li>
-                <li>
-                    <div class="like_img">
-                        <img src="uploads/like_06.png" title="猜你喜欢">
-                    </div>
-                    <div class="like_item">
-                        <p class="txt_ellipsis">韩国所望</p>
-                        <p class="txt_ellipsis">紧致湿润精华露400ml</p>
-                        <a href="javascript:;">¥116.00</a>
-                    </div>
-                </li>
-            </ul>
-        </div>
-    </div>
-    <!-- 猜你喜欢 end -->
 
-    <!-- 有趣区 start -->
-    <div class="interest w">
-        <div class="interest_hd">
-            <h2 id="interest">传智播客·有趣区</h2>
-        </div>
-        <div class="interest_bd">
-            <div class="interest_item1">
-                <img src="uploads/interest_item1.png" title="">
-            </div>
-            <div class="interest_item2">
-                <img src="uploads/interest_item2.png" title="">
-            </div>
-            <div class="interest_item3">
-                <img src="uploads/interest_item3.png" title="">
-            </div>
-            <div class="interest_item4">
-                <img src="uploads/interest_item4.png" title="">
-            </div>
-        </div>
-    </div>
-    <!-- 有趣区 end -->
 
     <!-- 楼层区 start -->
     <div class="floor">
-        <!-- 一楼 -->
+        <!-- 猜你喜欢 start -->
+        <div class="like w">
+            <div class="like_hd">
+                <h2 id="like">猜你喜欢</h2>
+                <a href="javasrcipt:;">换一批</a>
+            </div>
+            <div class="like_bd">
+                <ul>
+                    <li>
+                        <div class="like_img">
+                            <img src="uploads/like_01.png" title="猜你喜欢">
+                        </div>
+                        <div class="like_item">
+                            <p class="txt_ellipsis">阳光美包新款单肩包女,阳光美包新款单肩包女</p>
+                            <p class="txt_ellipsis">包时尚子母包四件套女</p>
+                            <a href="javascript:;">¥116.00</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="like_img">
+                            <img src="uploads/like_02.png" title="猜你喜欢">
+                        </div>
+                        <div class="like_item">
+                            <p class="txt_ellipsis">三星</p>
+                            <p class="txt_ellipsis">（G5500）移动联</p>
+                            <a href="javascript:;">¥649.00</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="like_img">
+                            <img src="uploads/like_03.png" title="猜你喜欢">
+                        </div>
+                        <div class="like_item">
+                            <p class="txt_ellipsis">欧普</p>
+                            <p class="txt_ellipsis">JYLZ08面板灯平板灯铝</p>
+                            <a href="javascript:;">¥238.00</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="like_img">
+                            <img src="uploads/like_04.png" title="猜你喜欢">
+                        </div>
+                        <div class="like_item">
+                            <p class="txt_ellipsis">爱仕达 30CM炒锅不粘</p>
+                            <p class="txt_ellipsis">锅NWG8330E电磁炉炒</p>
+                            <a href="javascript:;">¥116.00</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="like_img">
+                            <img src="uploads/like_05.png" title="猜你喜欢">
+                        </div>
+                        <div class="like_item">
+                            <p class="txt_ellipsis">捷波朗 </p>
+                            <p class="txt_ellipsis">（jabra）BOOSI劲步</p>
+                            <a href="javascript:;">¥116.00</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="like_img">
+                            <img src="uploads/like_06.png" title="猜你喜欢">
+                        </div>
+                        <div class="like_item">
+                            <p class="txt_ellipsis">韩国所望</p>
+                            <p class="txt_ellipsis">紧致湿润精华露400ml</p>
+                            <a href="javascript:;">¥116.00</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- 猜你喜欢 end -->
+
+        <!-- 有趣区 start -->
+        <div class="interest w">
+            <div class="interest_hd">
+                <h2 id="interest">传智播客·有趣区</h2>
+            </div>
+            <div class="interest_bd">
+                <div class="interest_item1">
+                    <img src="uploads/interest_item1.png" title="">
+                </div>
+                <div class="interest_item2">
+                    <img src="uploads/interest_item2.png" title="">
+                </div>
+                <div class="interest_item3">
+                    <img src="uploads/interest_item3.png" title="">
+                </div>
+                <div class="interest_item4">
+                    <img src="uploads/interest_item4.png" title="">
+                </div>
+            </div>
+        </div>
+        <!-- 有趣区 end -->
+
+        <!-- 家用电器区 -->
         <div class="home_electric w">
             <div class="electric_hd">
                 <h3 id="home_electric">家用电器</h3>
@@ -488,7 +492,7 @@
                 <img src="uploads/elecric_ft.png" title="赞助商">
             </div>
         </div>
-        <!-- 二楼 -->
+        <!-- 手机通讯区 -->
         <div class="phone w">
             <div class="phone_hd">
                 <h3 id="phone">手机通讯</h3>
@@ -565,7 +569,7 @@
                 <img src="uploads/elecric_ft.png" title="赞助商">
             </div>
         </div>
-        <!-- 三楼 -->
+        <!-- 电脑办公区 -->
         <div class="computer w">
             <div class="computer_hd">
                 <h3 id="computer">电脑办公</h3>
@@ -648,11 +652,11 @@
     <!-- 左侧边栏 start -->
     <div class="sidebar_left">
         <ul>
-            <li><a href="#like">猜你喜欢</a></li>
-            <li><a href="#interest">传智播客</a></li>
-            <li><a href="#home_electric">家用电器</a></li>
-            <li><a href="#phone">手机通讯</a></li>
-            <li><a href="#computer">电脑办公</a></li>
+            <li><a>猜你喜欢</a></li>
+            <li><a>传智播客</a></li>
+            <li><a>家用电器</a></li>
+            <li><a>手机通讯</a></li>
+            <li><a>电脑办公</a></li>
         </ul>
     </div>
     <!-- 左侧边栏 end -->

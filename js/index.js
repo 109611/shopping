@@ -2,7 +2,7 @@
  * @Author: XiaoMing
  * @Date: 2020-04-29 22:54:02 
  * @Last Modified by: mikey.zhaopeng
- * @Last Modified time: 2020-05-04 23:31:24
+ * @Last Modified time: 2020-05-05 10:13:31
  */
 
 window.addEventListener('load', function () {
@@ -11,7 +11,8 @@ window.addEventListener('load', function () {
     var focusImg = document.querySelector('.focusImg');
     var focusPrev = document.querySelector('.focus_Prev');
     var focusNext = document.querySelector('.focus_next');
-    var focusFlag = true;//焦点图节流阀
+    var flag = true//节流阀（互斥锁）
+    var focusFlag = true;//焦点图节流阀（互斥锁）
     var focusTimer = null;//焦点图轮播定时器
     var imgNum = 0;    //控制焦点图切换
     var IndexNum = 0;    //控制焦点图小圆点切换
@@ -136,9 +137,12 @@ window.addEventListener('load', function () {
 
     //电梯导航
     $('.sidebar_left li').click(function () {
+        flag = false;//关闭节流阀（互斥锁）
         var current = $('.floor .w').eq($(this).index()).offset().top;
         $('body, html').stop().animate({
             scrollTop: current
+        }, function () {
+            flag = true;//打开节流阀（互斥锁）
         });
         $('.sidebar_left li a').removeClass('current');
         $('.sidebar_left li').eq($(this).index()).children(0).addClass('current');
@@ -155,6 +159,7 @@ window.addEventListener('load', function () {
     //页面滚动调用函数
     function pageScroll() {
         //window.pageYOffset:获取页面被卷去的高度
+        //如果页面被卷去的高度 >= main盒子距离页面顶部的距离
         if (window.pageYOffset >= mainTop) {
             sidebarLeft.style.position = 'fixed'
             sidebarLeft.style.top = sidebarLeftTop + 'px';
@@ -162,5 +167,18 @@ window.addEventListener('load', function () {
             sidebarLeft.style.position = 'absolute'
             sidebarLeft.style.top = '50%';
         }
+
+        //判断节流阀（互斥锁）是否打开
+        if (flag) {
+            //循环楼层区里的每一层
+            $('.floor .w').each(function (i, ele) {
+                //如果页面滚动的距离 >= 每一个楼层区的距离页面顶部的距离
+                if ($(document).scrollTop() >= $(ele).offset().top) {
+                    $('.sidebar_left li a').removeClass('current');
+                    $('.sidebar_left li').eq(i).children(0).addClass('current');
+                }
+            });
+        }
+
     }
 })

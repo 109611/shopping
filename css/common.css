@@ -421,6 +421,11 @@
   color: #666666;
 }
 
+.Qr_code {
+  width: 100px;
+  height: 100px;
+}
+
 .footer .mod_copyright {
   height: 120px;
   padding-top: 20px;

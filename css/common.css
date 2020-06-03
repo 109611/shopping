@@ -53,21 +53,56 @@
 
 /* 快速导航模块 */
 .shortcut {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
   height: 31px;
   line-height: 31px;
   background-color: #f1f1f1;
+  opacity: 0.9;
+  z-index: 9999;
 }
 
-.shortcut ul li {
+.shortcut_fl > ul > li,
+.shortcut_fr > ul > li {
   float: left;
+  height: 31px;
+}
+
+.shortcut_fr > ul > li a {
+  padding: 0px 15px;
 }
 
 /* 选择所有偶数的li */
-.shortcut .fr ul li:nth-child(even) {
+.shortcut_fr > ul > li:nth-child(even) {
   width: 1px;
   height: 12px;
-  margin: 9px 15px;
+  padding: 0;
+  margin-top: 10px;
   border: 1px solid #666666;
+}
+
+.shortcut_fr > ul > li > ul {
+  position: relative;
+  display: none;
+  width: 100%;
+  background-color: #f1f1f1;
+  cursor: default;
+  z-index: 999;
+}
+
+.shortcut_fr > ul > li:hover > ul {
+  display: block;
+}
+
+.shortcut_fr > ul > li > ul > li {
+  padding: 0px 15px;
+}
+
+.shortcut_fr > ul > li > ul > li:hover {
+  background-color: #c81623;
+  color: #fff;
 }
 
 /* 旋转样式  正数为顺时针 负数为逆时针*/
@@ -101,6 +136,7 @@
 .header {
   position: relative;
   height: 105px;
+  margin-top: 31px;
 }
 
 .logo {
